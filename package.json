@@ -14,13 +14,17 @@
     "node": ">=18.0"
   },
   "scripts": {
+    "build": "npm install && npm run dev",
     "compile": "tsc",
     "dev": "ts-node-dev --respawn ./src/index.ts",
     "start": "npm run compile && nodemon ./dist/index.js",
     "test": "jest"
   },
   "dependencies": {
-    "@parcel/watcher": "^2.4.0"
+    "@apollo/server": "^4.11.0",
+    "@parcel/watcher": "^2.4.0",
+    "graphql": "^16.9.0",
+    "graphql-tag": "^2.12.6"
   },
   "devDependencies": {
     "@types/jest": "^29.0.3",
